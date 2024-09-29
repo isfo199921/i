@@ -77,7 +77,7 @@ async def main():
 
             await client(InviteToChannelRequest(target_channel, [user_to_add]))
             print("Waiting for 60-180 seconds ...")
-            time.sleep(random.randrange(60, 180))
+            time.sleep(1)
 
         except PeerFloodError:
             print("Getting Flood Error from Telegram. Script is stopping now. Please try again after some time.")
